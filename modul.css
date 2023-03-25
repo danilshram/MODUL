@@ -10,6 +10,7 @@ body {
     background-color: var(--primaryColor);
     height: 100vh;
     padding: 25px;
+    overflow-x: hidden;
 }
 .header {
     display: flex;
@@ -217,6 +218,7 @@ body {
     display: flex;
     flex-flow: row nowrap;
     padding: 25px;
+    margin-top: 100px;
 }
 .third-container .vector {
     position: absolute;
@@ -235,7 +237,6 @@ body {
     align-items: center;
     width: 25%;
     box-sizing: content-box;
-    margin-top: 100px;
     margin-left: 10px;
     z-index: 1;
 }
@@ -398,6 +399,7 @@ body {
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-around;
+    margin-bottom: 40px;
 }
 .name-inputs > input {
     background: transparent;
@@ -413,61 +415,18 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.contact-inputs {
-    display: flex;
-    width: 100%;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-.contact-inputs > input {
-    background: transparent;
-    border: 2px solid #FFFFFF;
-    border-radius: 40px;
-    width: 40%;
-    padding: 25px;
-    margin-top: 30px;
-}
-.contact-inputs > input::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-.subject-input {
-    background: transparent;
+#subject {
     width: 90%;
-    margin-left: 10px;
 }
-.subject-input  input {
+.name-inputs  textarea {
     background: transparent;
     border: 2px solid #FFFFFF;
     border-radius: 40px;
-    padding: 25px;
-    margin: 30px;
-    width: 100%;
-}
-.subject-input input::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-.textarea-info {
-    background: transparent;
     width: 90%;
-    margin-left: 10px;
-}
-.textarea-info  textarea {
-    background: transparent;
-    border: 2px solid #FFFFFF;
-    border-radius: 40px;
-    width: 100%;
     padding: 25px;
     margin: 25px;
 }
-.textarea-info textarea::placeholder {
+.name-inputs textarea::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -481,15 +440,17 @@ body {
     position: relative;
     width: 100%;
     padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     margin-top: 120px;
-    justify-content: space-between;
 }
 .footer .vector {
     position: absolute;
     top: -80%;
+}
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .footer .logo {
     padding: 25px;
@@ -526,6 +487,7 @@ body {
 }
 .footer-line {
     margin-top: 70px;
+    width: 100%;
 }
 .footer-text {
     font-weight: 700;
@@ -533,5 +495,6 @@ body {
     line-height: 17px;
     letter-spacing: 0.13em;
     color: white;
-    margin: 50px auto;
+    text-align: center;
+    margin-top: 50px;
 }
