@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="modul.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,25 @@
                 <img class="logo" src="img/Vector.png" alt="">
                 <img class="logo-name" src="img/Group.png" alt="">
             </div>
-            <div class="header-links">
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">TECHNOLOGIES</a>
-                <a href="#">HOW TO</a>
-            </div>
+            <nav class="burger-menu">
+                <input id="menu-toogle" type="checkbox">
+                <label class="menu-btn" for="menu-toogle">
+                    <span></span>
+                </label>
+                <div class="header-links">
+                    <a class="menu-item" href="#">ABOUT</a>
+                    <a class="menu-item" href="#">SERVICES</a>
+                    <a class="menu-item" href="#">TECHNOLOGIES</a>
+                    <a class="menu-item" href="#">HOW TO</a>
+                </div>
+            </nav>
             <div class="header-btns">
                 <button class="contact-btn" type="submit">CONTACT US</button>
                 <button class="submit-btn" type="submit">JOIN HYDRA</button>
             </div>
         </div>
         <div class="first-container">
-            <div>
+            <div class="text-wrapper">
                 <div class="container-text">
                     <img class="vector" src="img/Vector 4.png" alt="">
                     <div class="container-title">
@@ -257,7 +264,7 @@
                         <div class="name-inputs">
                             <textarea name="" id="" cols="45" rows="10" placeholder="Tell Us Something.."></textarea>
                         </div>
-                        <button class="submit-btn" type="submit">JOIN HYDRA</button>
+                        <button class="submit-btn" type="submit">SEND TO HYDRA</button>
                     </div>
                 </form>
         </div>
