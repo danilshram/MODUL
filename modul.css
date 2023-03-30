@@ -33,7 +33,6 @@ body {
 span {
     display: none;
 }
-
 .header-links {
     display: flex;
 }
@@ -50,7 +49,7 @@ span {
     align-items: center;
 }
 .contact-btn {
-    width: 154px;
+    width: 155px;
     border: 2px solid white;
     background-color: var(--primaryColor);
     border-radius: 40px;
@@ -65,6 +64,8 @@ span {
     border-radius: 40px;
     color: #343045;
     font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
     padding: 15px;
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -76,6 +77,10 @@ span {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 100px;
+}
+.text-wrapper {
+    position: relative;
+    z-index: 1;
 }
 .main-img {
     margin-top: -20px;
@@ -108,11 +113,6 @@ span {
     position: absolute;
     left: -10%;
 }
-.container-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 44px;
-}
 .container-title h1 {
     background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
     -webkit-background-clip: text;
@@ -139,8 +139,6 @@ span {
 }
 .button-shape .submit-btn {
     margin: 20px 0px;
-    font-size: 12px;
-    font-weight: 700;
     width: 214px;
 }
 .button-shape img {
@@ -181,7 +179,7 @@ span {
 }
 .line {
     height: 100px;
-    border: 1px solid rgba(192 183, 232, 0.33);
+    border: 1px solid rgba(192, 183, 232, 0.33);
 }
 .second-container {
     position: relative;
@@ -244,12 +242,14 @@ span {
     font-size: 36px;
     line-height: 44px;
     color: white;
+    margin: 0px;
 }
 .titles-content2 h2 {
     font-weight: 300;
     font-size: 36px;
     line-height: 44px;
     color: white;
+    margin: 0px;
 }
 .titles-content2 p {
     font-weight: 400;
@@ -284,7 +284,6 @@ span {
     display: flex;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
     border-radius: 40px;
-    justify-content: space-between;
     flex-flow: column nowrap;
     align-items: center;
     width: 25%;
@@ -293,7 +292,7 @@ span {
     z-index: 1;
 }
 .introduction-content img {
-    margin: 30px auto;
+    margin: 30px auto 0px;
     border-radius: 50%;
 }
 .introduction-content h1 {
@@ -322,17 +321,17 @@ span {
     padding: 25px;
     position: relative;
     margin-top: 50px;
-    width: 100%;
 }
 .fourth-container img {
     width: 100%;
 }
 .fourth-container .shape {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     text-align: center;
+    margin-top: -25px;
 }
 .click {
     border-radius: 50%;
@@ -340,15 +339,10 @@ span {
     width: 70px;
     height: 70px;
     margin: auto;
-    transform: translate(0px, -50%);
-}
-.click img {
-    margin: auto;
+    transform: translate(0, -50%);
 }
 .fifth-container {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     padding: 25px;
     width: 100%;
 }
@@ -382,7 +376,6 @@ span {
     z-index: 1;
 }
 .round-text {
-    font-style: normal;
     font-weight: 700;
     font-size: 64px;
     color: #343045;
@@ -394,7 +387,7 @@ span {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 18%;
+    width: 25%;
     align-items: flex-start;
     margin-top: 25px;
 }
@@ -551,9 +544,6 @@ span {
     margin-top: 50px;
 }
 @media (max-width: 575px) {
-    body {
-        overflow-x: hidden;
-    }
     .header {
         align-items: center;
         justify-content: space-between;
@@ -665,15 +655,21 @@ span {
       }
       .first-vector {
         top: 18%;
-        left: 5%;
+        left: 25%;
       }
       .second-vector {
         top: 0%;
-        left: -3%;
+        left: 10%;
       }
       .third-vector {
         top: 50%;
         left: -60%
+      }
+      .submit-btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #343045;
       }
       .text-wrapper {
         order: 2;
@@ -815,13 +811,16 @@ span {
         overflow: auto;
         justify-content: flex-start;
      }
+     .sixth-container .vector {
+        display: none;
+     }
      .round-wrapper {
         min-width: 100%;
         align-items: center;
      }
      .stages-name {
         margin-top: 35px;
-        margin-left: -25px;
+        margin-left: 20px;
      }
      .stages-name img {
         display: none;
@@ -901,4 +900,4 @@ span {
     .footer-text {
         margin-top: 30px;
     }
-    }
+}
